@@ -1,0 +1,15 @@
+{
+  "name": "02-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "vite": "vite",
+    "dev": "wrangler pages dev --compatibility-date=2023-02-23 -- vite",
+    "build": "vite build",
+    "deploy": "yarn build && wrangler pages publish pages"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.1.4",
+    "wrangler": "^2.11.0"
+  }
+}

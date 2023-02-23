@@ -1,0 +1,20 @@
+{
+  "name": "06-d1",
+  "version": "0.0.0",
+  "scripts": {
+    "d1:create": "yarn wrangler d1 create d1-demo",
+    "d1:init": "yarn wrangler d1 execute d1-demo --local --file=./posts.sql",
+    "d1:delete": "yarn wrangler d1 delete d1-demo",
+    "dev": "wrangler pages dev --compatibility-date=2023-02-23 --d1=DB --persist ./pages",
+    "deploy": "wrangler pages publish ./pages"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230221.0",
+    "better-sqlite3": "8.0.1",
+    "wrangler": "^2.11.0"
+  },
+  "dependencies": {
+    "hono": "^3.0.1"
+  }
+}

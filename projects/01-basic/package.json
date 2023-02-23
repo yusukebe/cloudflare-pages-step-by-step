@@ -1,0 +1,12 @@
+{
+  "name": "01-basic",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "wrangler pages dev --compatibility-date=2023-02-23 ./pages",
+    "deploy": "wrangler pages publish ./pages"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^2.11.0"
+  }
+}
