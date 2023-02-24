@@ -18,6 +18,7 @@ By integrating these components, it would be possible to create a React SPA appl
 ## TODO
 
 - [ ] testing
+- [ ] variables
 - [ ] R2?
 - [ ] KV?
 - [ ] Cache?
