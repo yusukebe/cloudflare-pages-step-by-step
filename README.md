@@ -13,15 +13,7 @@ By integrating these components, it would be possible to create a React SPA appl
 * [05-hono](./projects/05-hono/)
 * [06-d1](./projects/06-d1/)
 * [07-rpc](./projects/07-rpc/)
-
-
-## TODO
-
-- [ ] testing
-- [ ] variables
-- [ ] R2?
-- [ ] KV?
-- [ ] Cache?
+* [08-testing](./projects/08-testing/)
 
 ## Related Projects
 
