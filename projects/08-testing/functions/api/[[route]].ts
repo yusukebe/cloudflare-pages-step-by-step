@@ -1,4 +1,8 @@
 import app from '../../server'
+import { Hono } from 'hono'
 import { handle } from 'hono/cloudflare-pages'
 
-export const onRequest = handle(app, '/api')
+const api = new Hono()
+api.route('/api', app)
+
+export const onRequest = handle(api)

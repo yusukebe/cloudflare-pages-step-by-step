@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react'
 import { hc } from 'hono/client'
 import { AppType } from '../functions/api/[[route]]'
 
-const client = hc<AppType>('/api')
+const client = hc<AppType>('/')
 
 const App = () => {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await client.hello.$get({
+      const res = await client.api.hello.$get({
         query: {
           name: 'RPC',
         },

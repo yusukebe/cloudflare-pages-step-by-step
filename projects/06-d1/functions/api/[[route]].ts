@@ -12,7 +12,7 @@ type Post = {
   body: string
 }
 
-const app = new Hono<{ Bindings: Bindings }>()
+const app = new Hono<{ Bindings: Bindings }>().basePath('/api')
 
 app
   .get('/posts', prettyJSON(), async (c) => {
@@ -34,4 +34,4 @@ app
     })
   })
 
-export const onRequest = handle(app, '/api')
+export const onRequest = handle(app)

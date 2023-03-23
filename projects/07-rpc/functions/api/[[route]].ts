@@ -3,7 +3,7 @@ import { handle } from 'hono/cloudflare-pages'
 import { z } from 'zod'
 import { zValidator } from '@hono/zod-validator'
 
-const app = new Hono()
+const app = new Hono().basePath('/api')
 
 const schema = z.object({
   name: z.string(),
@@ -18,4 +18,4 @@ const route = app.get('/hello', zValidator('query', schema), (c) => {
 
 export type AppType = typeof route
 
-export const onRequest = handle(app, '/api')
+export const onRequest = handle(app)
