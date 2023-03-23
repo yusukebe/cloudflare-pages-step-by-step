@@ -14,6 +14,7 @@ By integrating these components, it would be possible to create a React SPA appl
 * [06-d1](./projects/06-d1/)
 * [07-rpc](./projects/07-rpc/)
 * [08-testing](./projects/08-testing/)
+* [09-middleware](./projects/09-middleware/)
 
 ## Related Projects
 
